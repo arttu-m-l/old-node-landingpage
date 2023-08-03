@@ -1,5 +1,6 @@
 # old-node-landingpage
-Landing page stripped from a bit larger web application, where some features were deactivated.
+A few years old landing page stripped from a bit larger web application, where some of its features were/are deactivated.
+Some of the metacommentary and contents are in finnish sadly, but it should showcase somewhat of it.
 
 ## Instructions for running the project locally
 ### 1. I recommend downloading the newest LTS version of Node.js available from:
