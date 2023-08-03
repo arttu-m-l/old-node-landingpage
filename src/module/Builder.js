@@ -1,7 +1,5 @@
 import * as React from 'react';
-import ImageCardTemplate from './ImageCardTemplate';
-import ImageCardInfo from './ImageCardInfo';
-import CardContact from './CardContact';
+import CardFactory from './CardFactory';
 import data from './Data/data';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { Box, IconButton, } from '@mui/material';
@@ -84,8 +82,9 @@ function Builder() {
 
                 }}
             >
-                <ImageCardInfo
-                    para={data[0]}
+                <CardFactory
+                    content={data[0]}
+                    type={"info"}
                     style={{
                         margin: 0,
                     }}
@@ -98,8 +97,9 @@ function Builder() {
                 }}
             >
 
-                <ImageCardTemplate
-                    para={data[1]}
+                <CardFactory
+                    content={data[1]}
+                    type={"imagecard"}
                     style={{
                         margin: 0,
                     }}
@@ -112,8 +112,9 @@ function Builder() {
                     marginBottom: '15vh',
                 }}
             >
-                <ImageCardTemplate
-                    para={data[2]}
+                <CardFactory
+                    content={data[2]}
+                    type={"imagecard"}
                     style={{
                         margin: 0,
                     }}
@@ -125,8 +126,9 @@ function Builder() {
                     marginBottom: '15vh',
                 }}
             >
-                <ImageCardTemplate
-                    para={data[3]}
+                <CardFactory
+                    content={data[3]}
+                    type={"imagecard"}
                     style={{
                         margin: 0,
                     }}
@@ -138,8 +140,9 @@ function Builder() {
                     paddingBottom: '15vh',
                 }}
             >
-                <ImageCardTemplate
-                    para={data[4]}
+                <CardFactory
+                    content={data[4]}
+                    type={"imagecard"}
                     style={{
                         margin: 0,
                     }}
@@ -152,8 +155,9 @@ function Builder() {
                     paddingBottom: '15vh',
                 }}
             >
-                <ImageCardTemplate
-                    para={data[5]}
+                <CardFactory
+                    content={data[5]}
+                    type={"imagecard"}
                     style={{
                         margin: 0,
                     }}
@@ -165,8 +169,9 @@ function Builder() {
                     paddingBottom: '15vh',
                 }}
             >
-                <CardContact
-                    para={data[5]}
+                <CardFactory
+                    para={null}
+                    type={"contact"}
                     style={{
                         margin: 0,
                     }}
