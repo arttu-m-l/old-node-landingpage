@@ -11,7 +11,7 @@ import Header from './module/Header';
 function App() {
   
   React.useEffect(() => {
-    document.title = "spage";
+    document.title = "o-n-l";
   }, []);
   
   return (
