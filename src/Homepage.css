@@ -1,0 +1,66 @@
+/*:root {
+    background: url(../public/assets/kuva8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: calc(100vw - 0.1px);
+    z-index: -1;
+    /* Toivottavasti toimii juurialkiossa */
+    /*background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+*/
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    /*width: calc(100vw - 0.1px);*/
+    width: calc(100vw - 0.1px);
+    height: 100%;
+    z-index: -10;
+    background: url(../public/assets/kuva8.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*TESTING*/
+    /*overflow-x: hidden;
+    overflow-y: auto;*/
+    /*overflow-x: hidden;*/
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+
+/*
+@media (pointer: coarse) {
+    :root {
+        background: linear-gradient(335deg, rgb(156, 139, 132) 0%, rgb(227, 204, 193) 100%);        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: calc(100vw - 0.1px);
+        z-index: -1;
+        
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    #taustafiltteri {
+        background-color: rgba(0,0,0,0.0);
+        height: 100%;
+        width: calc(100vw - 0.1px);
+    }
+}
+*/
